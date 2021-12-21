@@ -1,12 +1,16 @@
 {
-  "version": "0.1.1",
   "name": "dromedar-design",
+  "version": "0.1.1",
   "private": true,
   "scripts": {
-    "dev": "next dev",
     "build": "next build",
-    "start": "next start",
-    "lint": "next lint"
+    "dev": "next dev",
+    "lint": "next lint",
+    "release": "standard-version",
+    "start": "next start"
+  },
+  "prettier": {
+    "printWidth": 100
   },
   "dependencies": {
     "next": "12.0.7",
@@ -21,10 +25,8 @@
     "eslint-config-next": "12.0.7",
     "postcss": "^8.4.5",
     "prettier": "^2.5.1",
+    "standard-version": "^9.3.2",
     "tailwindcss": "^3.0.7",
     "typescript": "4.5.4"
-  },
-  "prettier": {
-    "printWidth": 100
   }
 }
