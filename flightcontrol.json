@@ -1,0 +1,23 @@
+{
+  "environments": [
+    {
+      "id": "production",
+      "name": "Production",
+      "region": "eu-central-1",
+      "source": {
+        "branch": "flightcontrol"
+      },
+      "services": [
+        {
+          "id": "dromedar-design",
+          "name": "dromedar-design",
+          "type": "fargate",
+          "cpu": 0.25,
+          "memory": 512,
+          "buildCommand": "npm run build",
+          "startCommand": "npm run start"
+        }
+      ]
+    }
+  ]
+}
