@@ -1,10 +1,9 @@
+const defaultTheme = require("tailwindcss/defaultTheme");
+
 module.exports = {
   content: ["./pages/**/*.{js,ts,jsx,tsx}", "./components/**/*.{js,ts,jsx,tsx}"],
   theme: {
     extend: {
-      screens: {
-        "lg+": "1100px",
-      },
       colors: {
         dd: {
           teal: "#04ABD5",
@@ -12,6 +11,9 @@ module.exports = {
           purple: "#9800FF",
           red: "#EF4E6E",
         },
+      },
+      fontFamily: {
+        sans: ["Poppins", ...defaultTheme.fontFamily.sans],
       },
     },
   },

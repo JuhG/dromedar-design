@@ -17,6 +17,12 @@ function MyApp({ Component, pageProps }: AppProps) {
         <meta name="application-name" content="Dromedar Design" />
         <meta name="msapplication-TileColor" content="#da532c" />
         <meta name="theme-color" content="#ffffff" />
+
+        <title>Dromedar Design</title>
+        <meta name="description" content="Online megoldások modern cégeknek" />
+
+        <link rel="preconnect" href="https://fonts.googleapis.com" />
+        <link rel="preconnect" href="https://fonts.gstatic.com" />
       </Head>
       <Component {...pageProps} />
     </>
